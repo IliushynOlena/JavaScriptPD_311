@@ -2,9 +2,15 @@
 console.log("Hello JS from console")
 
 //--------------- variable ------------------
-let number = 100.33;
-let email = "lena@gmail.com";
-let flag = true;
+let empty;//undefined
+let nullObject = null;//null
+
+let number = 100.33333333333333333333;//number
+
+let email = "lena@gmail.com";//string
+let flag = true;//boolean
+let array = [1,2,3]//object
+let summ = function(a,b){console.log(`${a} + ${b} = ${a+b}`)}//function
 
 console.log(number)
 console.log(typeof(number))
@@ -17,15 +23,14 @@ email = 3.36;
 console.log(`Number = ${number}, type : ${typeof(number)}`)
 console.log(`Email = ${email}, type : ${typeof(email)}`)
 
-let empty;//undefined
-let nullObject = null;//null
+
 console.log(`Empty = ${empty}, type : ${typeof(empty)}`)
 console.log(`nullObject = ${nullObject}, type : ${typeof(nullObject)}`)
 
-let array = [1,2,3]
+
 console.log(`Array = ${array}, type : ${typeof(array)}`)
 
-let summ = function(a,b){console.log(`${a} + ${b} = ${a+b}`)}
+
 console.log(`Func = ${summ}, type : ${typeof(summ)}`)
 
 summ(5,7)
@@ -70,7 +75,7 @@ console.log("Length = " +  numbers.length);
 for (const index in numbers) {
     console.log(index)
 }
-
+console.log("Hello world!!!!!!");
 console.warn("Some warning!!!!")
 console.error("Some error!!!")
 
@@ -103,12 +108,13 @@ function Summa(a,b)
     return a+b;
 }
 
-alert("Result : " + divide(45,5))
+// alert("Result : " + divide(45,5))
 
-let numA = +prompt("Enter your number A : ");
-let numB = +prompt("Enter your number B : ");
-//alert("Result = " + divide(numA, numB))
-alert("Result = " + Summa(numA, numB))
+//let numA = +prompt("Enter your number A : ");
+// let numB = +prompt("Enter your number B : ");
+// //alert("Result = " + divide(numA, numB))
+// alert("Result = " + Summa(numA, numB))
+console.log(Math.round(12.4))
 
 
 
