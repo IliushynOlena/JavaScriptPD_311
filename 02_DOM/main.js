@@ -4,9 +4,37 @@ document.write("<p>lorem ipsum</p>")
 const tableBody = document.getElementById('table-body');
 const createBtn = document.getElementById('create-btn');
 const clearBtn = document.getElementById('clear-btn');
+const theme_Btn = document.getElementById('theme-btn');
+const navbar = document.getElementById('navbar');
 
+theme_Btn.onclick = ()=>{
+    //console.log("My button clicked!!!");
+    if( theme_Btn.innerHTML == 'Dark Header')
+    {
+       //delete light classes
+       navbar.classList.remove('navbar-dark')
+       navbar.classList.remove('bg-dark')
+       //add dark classes
+       navbar.classList.add('navbar-light')
+       navbar.classList.add('bg-primary')
+       theme_Btn.innerHTML = "Light Header";
+      
+    }
+    else{       
+
+          //delete dark classes
+          navbar.classList.remove('navbar-light')
+          navbar.classList.remove('bg-primary')
+          //add light classes
+          navbar.classList.add('navbar-dark')
+          navbar.classList.add('bg-dark')
+          theme_Btn.innerHTML = "Dark Header";
+    }
+    
+    
+}
 let products = [];
-
+tableBody.innerHTML = "";
 createBtn.onclick = ()=>{
     //console.log("On click from JS");
     //add new product
